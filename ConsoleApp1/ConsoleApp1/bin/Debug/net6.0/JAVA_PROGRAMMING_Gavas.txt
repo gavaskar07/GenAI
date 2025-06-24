@@ -1,0 +1,1206 @@
+JAVA PROGRAMMING
+Using Single Example
+
+
+
+
+Mr. GAVASKAR S
+Assistant Professor (Ad)
+SRM-AP
+Table of Contents
+Chapter-1: Introduction to Java	4
+1.1 History of Java	5
+1.2 Features of Java	5
+1.3 ByteCode and JVM	5
+1.3.1 Byte Code	5
+1.3.2 JVM (Java Virtual Machine)	5
+1.3.3 JRE (Java Runtime Environment)	6
+1.3.4 JDK (Java Development Kit)	6
+1.4 First Simple Program	6
+1.5 Data Types in Java	7
+1.6 Variables in Java	7
+1.6.1 Example:	7
+1.7 Operators and Expressions	8
+1.8 Control Statements	9
+1.9.1 if Statement:	9
+1.9.2 if-else Statement:	10
+1.9.3 switch Statement:
+
+                       int day = 3;	10
+1.9.4 for loop:	10
+1.9.5 while loop:	11
+1.9.6 do-while loop:	11
+1.10 Type Conversion and Casting	11
+1.10.1 Widening Casting (Automatic):	11
+1.10.1.1 Example:	11
+1.10.1.2 Narrowing Casting (Manual):	11
+1.10.2 Example(Widening Casting and Narrowing Casting)	12
+2.Introduction to Classes and Objects	12
+2.1. Class	12
+2.2 . Object	13
+2.3 Syntax for Object Creation:	13
+2.4. Class Instantiation	13
+2.5 Example Program	13
+2.5.1. Class Program	13
+2.5.2. Object Creation Program	14
+2.5.3. Output:	15
+2.2 Constructors in Java	15
+2.2.1. Introduction to Constructors	15
+2.2.2 Syntax:	16
+2.2.3. Types of Constructors in Java	16
+2.2.3.1 Default Constructor (No-Argument Constructor):	16
+2.2.3.1.2 Example Program (Default Constructor):	16
+2.2.3.2  Parameterized Constructor:	18
+2.2.3.2.1 Example Program (Parameterized Constructor):	18
+2.3.4 Constructor Overloading:	20
+2.3.4.1 Example Program (Constructor Overloading):	20
+2.3 Methods and Method Overloading in Java	23
+2.3.1. Introduction to Methods	23
+Syntax:	23
+Example Program:	23
+Creating an Object and Calling a Method:	24
+2.3.2 Method Overloading	24
+Example Program (Method Overloading):	25
+Program for Instantiating Object and Calling Overloaded Methods:	26
+2.4 Static Members in Java	27
+2.4.1 Introduction to Static Members	27
+2.4.1.1. Static Variables	27
+2.4.1.2. Static Methods	28
+2.4.1.3 Accessing Static Members Without Creating an Object	29
+2.5 Inheritance and Method Overriding in Java	30
+2.5.1. Inheritance	30
+2.5.2. Method Overriding	30
+2.5.3 Example Program: Inheritance and Overriding	30
+2.6 Using this and super keyword:	33
+2.6.1 Example: Demonstrating this and super Keywords	33
+2.7 Using Final With Inheritance:	35
+Example Program for final Keyword	36
+2.8 Abstract Classes	38
+Example Program for Abstract class with both Concrete and abstract methods:	38
+2.9 Interface	40
+Example program for Interface:	40
+Differences between Abstract Classes and Interface	43
+2.10 Packages-Creating,accessing and Using Packages	43
+Types of Packages	43
+Creating Packages:	44
+Using/importing the package:	44
+Example program to access mypack package	44
+Purpose of the Package:	45
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Chapter-1: Introduction to Java
+Java is a versatile programming language and platform known for its robustness, security, and object-oriented principles. It allows developers to build applications that can run on any platform that supports Java without needing recompilation, making it one of the most widely adopted programming languages since its inception.
+1.1 History of Java
+Java’s journey began in 1991 with a team known as the Green Team, which was initially tasked with developing a language for digital devices like set-top boxes and televisions. However, as the Internet grew in popularity, Java was found to be highly suited for web development. Netscape was among the first to incorporate Java technology in its browser, making it an integral part of early internet growth.
+Java was developed by James Gosling, Mike Sheridan, and Patrick Naughton at Sun Microsystems, which is now a subsidiary of Oracle. Initially, Java was called "Oak," a name chosen as a symbol of strength and as a tribute to the oak tree, which is the national tree of several countries. However, in 1995, Oak was renamed "Java" due to a trademark conflict with Oak Technologies.
+1.2 Features of Java
+Java is packed with several essential features that make it a popular language:
+Simple: Java's syntax is simple, clean, and easy to learn.
+Object-Oriented: It uses objects and classes to organize code, making it modular and reusable.
+Platform Independent: Java code is compiled into bytecode, which can run on any platform, making Java "Write Once, Run Anywhere" (WORA).
+Secure: Java provides a secure environment by avoiding explicit pointer usage and running code inside a sandbox.
+Robust: Java has strong memory management and exception-handling mechanisms.
+Portable: Java programs can be transferred and executed across various computing environments.
+High Performance: Java's Just-In-Time (JIT) compiler optimizes code execution for speed.
+Distributed: Java supports distributed computing with its network-centric architecture
+1.3 ByteCode and JVM
+1.3.1 Byte Code
+Java programs are compiled into bytecode by the Java compiler. Bytecode is a platform-independent intermediate code that can run on any device with a Java Virtual Machine (JVM). This flexibility is what gives Java its cross-platform capability.
+1.3.2 JVM (Java Virtual Machine)
+The JVM is an abstract computing machine that allows Java bytecode to be executed. It provides a runtime environment for Java programs and makes Java platform-independent. The JVM interprets bytecode into machine code specific to the host system.
+1.3.3 JRE (Java Runtime Environment)
+The Java Runtime Environment (JRE) is a component of the Java platform that provides the runtime libraries and environment required to run Java applications. It contains the JVM, core libraries, and supporting files, but does not include development tools like compilers.
+1.3.4 JDK (Java Development Kit)
+The Java Development Kit (JDK) is a full-featured software development kit required to develop Java applications and applets. It includes the JRE, along with development tools like compilers (javac), debuggers, and other utilities.
+
+Figure-1:Bytecode,JVM,JDK and JRE
+1.4 First Simple Program
+Here's an example of a simple Java program:
+package first_simple;
+public class First_simple_program {
+    public static void main(String[] args) {
+        System.out.println("Welcome to CS246 JAVA Programming");
+    }
+}
+This basic program prints a welcome message and showcases Java's syntax structure, which includes the main method, class definitions, and package declarations.
+1.5 Data Types in Java
+Java supports two primary categories of data types:
+Primitive Data Types: These include basic types like boolean, char, byte, short, int, long, float, and double.
+Non-Primitive Data Types: These are more complex types like Classes, Interfaces, and Arrays.
+1.6 Variables in Java
+Variables are containers for storing data values. In Java, there are three types of variables:
+Local Variable: Defined within a method and accessible only inside that method.
+Instance Variable: Defined inside a class but outside any method, and each object of the class has its own copy.
+Static Variable: Defined with the static keyword and shared across all instances of a class.
+1.6.1 Example:
+public class Variables {
+    static String university_name = "SRM University"; // Static variable
+    String university_website = "www.srm.univ";       // Instance variable
+    void print_university_details() {
+        String university_address = "Andhra Pradesh"; // Local variable
+        System.out.println("The University Name is " + university_name);
+        System.out.println("The Location of University is " + university_address);
+        System.out.println("The Website of University is " + university_website);
+    }
+}
+1.7 Operators and Expressions
+Java supports various operators, such as arithmetic, relational, logical, and assignment operators, which help perform different operations on data.
+Operator Type
+Operator Symbol
+Description
+Example
+
+
+
+
+
+Arithmetic Operators
++
+Addition
+int sum = 10 + 5; // sum = 15
+-
+Subtraction
+int diff = 10 - 5; // diff = 5
+*
+Multiplication
+int prod = 10 * 5; // prod = 50
+/
+Division
+int quot = 10 / 5; // quot = 2
+%
+Modulus (remainder)
+int rem = 10 % 5; // rem = 0
+
+
+
+
+
+
+
+Relational (Comparison) Operators
+==
+Equal to
+boolean res = (10 == 5); // res = false
+!=
+Not equal to
+boolean res = (10 != 5); // res = true
+>
+Greater than
+boolean res = (10 > 5); // res = true
+<
+Less than
+boolean res = (10 < 5); // res = false
+>=
+Greater than or equal to
+boolean res = (10 >= 5); // res = true
+<=
+Less than or equal to
+boolean res = (10 <= 5); // res = false
+
+
+
+Logical Operators
+&&
+Logical AND
+boolean res = true && false; // res = false
+`
+
+
+`
+!
+Logical NOT
+boolean res = !true; // res = false
+
+
+
+
+
+
+Assignment Operators
+=
+Simple assignment
+int a = 10; // a = 10
++=
+Add and assign
+a += 5; // a = a + 5, result = 15
+-=
+Subtract and assign
+a -= 5; // a = a - 5, result = 5
+*=
+Multiply and assign
+a *= 2; // a = a * 2, result = 30
+/=
+Divide and assign
+a /= 2; // a = a / 2, result = 15
+%=
+Modulus and assign
+a %= 3; // a = a % 3, result = 0
+
+
+Increment/Decrement Operators
+++
+Increment operator (increase by 1)
+int a = 5; a++; // a becomes 6
+--
+Decrement operator (decrease by 1)
+int a = 5; a--; // a becomes 4
+Ternary Operator
+? :
+Shorthand for if-else condition
+int max = (10 > 5) ? 10 : 5; // max will be 10
+
+1.8 Control Statements
+Control statements in Java, such as if, else, switch, for, while, and do-while, help manage the flow of execution based on certain conditions.
+1.9.1 if Statement:
+int num = 10;
+if (num > 0) {
+    System.out.println("Positive number");
+  }
+1.9.2 if-else Statement:
+
+int num = -10;
+if (num > 0) {
+    System.out.println("Positive number");
+} else {
+    System.out.println("Negative number");
+}
+1.9.3 switch Statement:
+
+                       int day = 3;
+switch (day) {
+    case 1:
+        System.out.println("Sunday");
+        break;
+    case 2:
+        System.out.println("Monday");
+        break;
+    default:
+        System.out.println("Invalid day");
+}
+1.9.4 for loop:
+
+			for (int i = 0; i < 5; i++) {
+    System.out.println("i = " + i);
+}
+1.9.5 while loop:
+
+		int i = 0;
+while (i < 5) {
+    System.out.println("i = " + i);
+    i++;
+}
+1.9.6 do-while loop:
+
+int i = 0;
+do {
+    System.out.println("i = " + i);
+    i++;
+} while (i < 5);
+1.10 Type Conversion and Casting
+Type casting is the process of converting one data type into another. Java provides two types of casting:
+1.10.1 Widening Casting (Automatic): 
+Converts a smaller type to a larger type size. 
+1.10.1.1 Example:
+	
+            int myInt = 9;
+double myDouble = myInt;  // Automatic casting: int to double
+1.10.1.2 Narrowing Casting (Manual): 
+Converts a larger type to a smaller type size.
+Example:
+         double myDouble = 9.78;
+     int myInt = (int) myDouble;  // Manual casting: double to int
+1.10.2 Example(Widening Casting and Narrowing Casting)
+public class TypeCasting {
+    public static void main(String[] args) {
+        // Widening Casting
+        int myInt = 9;
+        double myDouble = myInt;  // Automatic casting: int to double
+        System.out.println(myInt);     // Outputs 9
+        System.out.println(myDouble);  // Outputs 9.0
+        
+        // Narrowing Casting
+        double myDouble1 = 9.78;
+        int myInt1 = (int) myDouble1;  // Manual casting:double to int
+        System.out.println(myDouble1); // Outputs 9.78
+        System.out.println(myInt1);    // Outputs 9
+    }
+}
+2.Introduction to Classes and Objects
+2.1. Class
+A class is a template or blueprint used to create objects. It defines the structure and behavior (methods) that the objects created from the class will have.
+Key Features:
+Data Members: These are the attributes or properties that define the state of the object.
+Methods: These define the behavior of the class.
+2.2 Syntax:
+class ClassName {
+    // Data Members
+    // Methods
+}
+2.2 . Object
+An object is an instance of a class. It represents a real-world entity that has state and behavior.
+Real-World Example:
+A car can be considered an object.
+States: name, color, model.
+Behaviors: changing gear, applying brakes.
+2.3 Syntax for Object Creation:
+
+	class_name object_name = new class_name();
+2.4. Class Instantiation
+The process of creating an object from a class is called instantiation. Objects are created using the new keyword.
+University SRM_University = new University();
+2.5 Example Program
+2.5.1. Class Program
+public class University {
+    // Data Members
+    String university_name;
+    String university_address;
+    String university_website;
+    String university_email;
+    String university_contactno;
+    int univeristy_faculty_count;
+    int university_student_count;
+    // Method to display university details
+    void getuniversity_details() {
+        System.out.println("The University Name is " + university_name);
+        System.out.println("The University address is " + university_address);
+        System.out.println("The University website is " + university_website);
+        System.out.println("The University email is " + university_email);
+        System.out.println("The University Contact No is " + university_contactno);
+        System.out.println("The University Faculty Count is " + univeristy_faculty_count);
+        System.out.println("The University Student Count is " + university_student_count);
+    }
+}
+2.5.2. Object Creation Program
+public class SRM_univeristy_main {
+    public static void main(String[] args) {
+        // Creating an instance of University class
+        University SRM_University = new University();
+        // Setting values for data members
+        SRM_University.university_name = "SRM University";
+        SRM_University.university_address = "Managalagiri, Amaravathi, Andrapradesh";
+        SRM_University.university_website = "www.srmap.edu.in";
+        SRM_University.university_email = "info@srmap.edu.in";
+        SRM_University.university_contactno = "123456781";
+        SRM_University.univeristy_faculty_count = 250;
+        SRM_University.university_student_count = 8000;
+        // Calling method to display university details
+        SRM_University.getuniversity_details();
+    }
+}
+2.5.3. Output:
+The University Name is SRM University
+The University address is Managalagiri, Amaravathi, Andrapradesh
+The University website is www.srmap.edu.in
+The University email is info@srmap.edu.in
+The University Contact No is 123456781
+The University Faculty Count is 250
+The University Student Count is 8000
+2.2 Constructors in Java
+2.2.1. Introduction to Constructors
+A constructor in Java is a special type of method used to initialize objects. When an object is created using the new keyword, the constructor is called to set up the object’s fields. Constructors have the following characteristics:
+They have the same name as the class.
+They do not have a return type.
+2.2.2 Syntax:
+class ClassName {
+    // Default constructor
+    ClassName() {
+        // Constructor body
+    }
+}
+2.2.3. Types of Constructors in Java
+2.2.3.1 Default Constructor (No-Argument Constructor):
+A default constructor is a constructor that does not take any parameters.
+If a programmer does not explicitly define any constructor in a class, Java automatically provides a default constructor.
+The default constructor initializes instance variables to default values (like null for strings and 0 for integers).
+2.2.3.1.2 Example Program (Default Constructor):
+(i)Creating Class with Constructor
+public class University {
+    // Data Members
+    String university_name;
+    String university_address;
+    String university_website;
+    String university_email;
+    String university_contactno;
+    int univeristy_faculty_count;
+    int university_student_count;
+    // Default Constructor
+    University() {
+        university_name = "SRM University";
+        university_address = "Managalagiri, Amaravathi, Andrapradesh";
+        university_website = "www.srmap.edu.in";
+        university_email = "info@srmap.edu.in";
+        university_contactno = "123456781";
+        univeristy_faculty_count = 250;
+        university_student_count = 8000;
+    }
+
+    // Method to display university details
+    void getuniversity_details() {
+        System.out.println("The University Name is " + university_name);
+        System.out.println("The University address is " + university_address);
+        System.out.println("The University website is " + university_website);
+        System.out.println("The University email is " + university_email);
+        System.out.println("The University Contact No is " + university_contactno);
+        System.out.println("The University Faculty Count is " + univeristy_faculty_count);
+        System.out.println("The University Student Count is " + university_student_count);
+    }
+}
+(ii)Instantiating Object for the class
+// Program for Instantiating Object
+public class SRM_university_main {
+    public static void main(String[] args) {
+        University SRM_University = new University();
+        SRM_University.getuniversity_details();
+    }
+}
+2.2.3.2  Parameterized Constructor:
+A parameterized constructor allows passing arguments to the constructor to initialize objects with specific values.
+2.2.3.2.1 Example Program (Parameterized Constructor):
+
+(i) Creating Class with parameterised Constructor
+public class University {
+    // Data Members
+    String university_name;
+    String university_address;
+    String university_website;
+    String university_email;
+    String university_contactno;
+    int univeristy_faculty_count;
+    int university_student_count;
+    // Parameterized Constructor
+    University(String university_name1, String university_address1, String university_website1, String university_email1, String university_contactno1, int univeristy_faculty_count1, int university_student_count1) {
+        university_name = university_name1;
+        university_address = university_address1;
+        university_website = university_website1;
+        university_email = university_email1;
+        university_contactno = university_contactno1;
+        univeristy_faculty_count = univeristy_faculty_count1;
+        university_student_count = university_student_count1;
+    }
+    // Method to display university details
+    void getuniversity_details() {
+        System.out.println("The University Name is " + university_name);
+        System.out.println("The University address is " + university_address);
+        System.out.println("The University website is " + university_website);
+        System.out.println("The University email is " + university_email);
+        System.out.println("The University Contact No is " + university_contactno);
+        System.out.println("The University Faculty Count is " + univeristy_faculty_count);
+        System.out.println("The University Student Count is " + university_student_count);
+    }
+}
+(ii) Instantiating object for the class
+// Program for Instantiating Object with Parameterized Constructor
+public class SRM_university_main {
+    public static void main(String[] args) {
+        University SRM_University = new University("SRM University", "Managalagiri, Amaravathi, Andrapradesh", "www.srmap.edu.in", "info@srmap.edu.in", "123456781", 250, 8000);
+        SRM_University.getuniversity_details();
+    }
+}
+2.3.4 Constructor Overloading:
+Constructor overloading is a feature that allows a class to have more than one constructor, differentiated by the number and type of parameters.
+Overloading constructors provides flexibility to initialize objects in different ways.
+2.3.4.1 Example Program (Constructor Overloading):
+
+
+(i)Creating Class for Constructor Overloading
+
+
+public class University {
+    // Data Members
+    String university_name;
+    String university_address;
+    String university_website;
+    String university_email;
+    String university_contactno;
+    int univeristy_faculty_count;
+    int university_student_count;
+
+    // Default Constructor
+    University() {
+        university_name = "SRM University";
+        university_address = "Managalagiri, Amaravathi, Andrapradesh";
+        university_website = "www.srmap.edu.in";
+        university_email = "info@srmap.edu.in";
+        university_contactno = "123456781";
+        univeristy_faculty_count = 250;
+        university_student_count = 8000;
+    }
+
+    // Parameterized Constructor
+    University(String university_name1, String university_address1, String university_website1, String university_email1, String university_contactno1, int univeristy_faculty_count1, int university_student_count1) {
+        university_name = university_name1;
+        university_address = university_address1;
+        university_website = university_website1;
+        university_email = university_email1;
+        university_contactno = university_contactno1;
+        univeristy_faculty_count = univeristy_faculty_count1;
+        university_student_count = university_student_count1;
+    }
+    // Method to display university details
+    void getuniversity_details() {
+        System.out.println("The University Name is " + university_name);
+        System.out.println("The University address is " + university_address);
+        System.out.println("The University website is " + university_website);
+        System.out.println("The University email is " + university_email);
+        System.out.println("The University Contact No is " + university_contactno);
+        System.out.println("The University Faculty Count is " + univeristy_faculty_count);
+        System.out.println("The University Student Count is " + university_student_count);
+    }
+}
+(ii)Instantiating object from the class
+// Program for Instantiating Object
+public class SRM_university_main {
+    public static void main(String[] args) {
+        // Using the default constructor
+        University SRM_University = new University();
+        SRM_University.getuniversity_details();
+        // Using the parameterized constructor
+        University anotherUniversity = new University("XYZ University", "Hyderabad, Telangana", "www.xyz.edu.in", "info@xyz.edu.in", "987654321", 200, 5000);
+        anotherUniversity.getuniversity_details();
+    }
+}
+2.3 Methods and Method Overloading in Java
+2.3.1. Introduction to Methods
+A method in Java is a block of code that performs a specific task. Methods are used to define the behavior of objects and improve code reusability. You can call a method multiple times from different parts of a program, which helps in modularizing code.
+Syntax:
+returnType methodName(parameters) {
+    // Method body
+    // Code to be executed
+    return value; // if returnType is not void
+}
+Example Program:
+public class University {
+    // Data Members
+    String university_name;
+    String university_address;
+    String university_website;
+    String university_email;
+    String university_contactno;
+    int univeristy_faculty_count;
+    int university_student_count;
+
+    // Method to display university details
+    void getuniversity_details() {
+        System.out.println("The University Name is " + university_name);
+        System.out.println("The University address is " + university_address);
+        System.out.println("The University website is " + university_website);
+        System.out.println("The University email is " + university_email);
+        System.out.println("The University Contact No is " + university_contactno);
+        System.out.println("The University Faculty Count is " + univeristy_faculty_count);
+        System.out.println("The University Student Count is " + university_student_count);
+    }
+}
+Creating an Object and Calling a Method:
+public class SRM_university_main {
+    public static void main(String[] args) {
+        University SRM_University = new University();
+        SRM_University.getuniversity_details();  // Calling the method
+    }
+}
+2.3.2 Method Overloading
+Method overloading is a feature in Java where multiple methods can have the same name but differ in:
+The number of parameters
+The types of parameters
+Method overloading increases flexibility in method usage. It allows a class to handle different inputs in different ways, making the code more intuitive and easier to manage.
+Example Program (Method Overloading):
+public class University {
+    // Data Members
+    String university_name;
+    String university_address;
+    String university_website;
+    String university_email;
+    String university_contactno;
+    int univeristy_faculty_count;
+    int university_student_count;
+
+    // Method to display all university details
+    void getuniversity_details() {
+        System.out.println("The University Name is " + university_name);
+        System.out.println("The University address is " + university_address);
+        System.out.println("The University website is " + university_website);
+        System.out.println("The University email is " + university_email);
+        System.out.println("The University Contact No is " + university_contactno);
+        System.out.println("The University Faculty Count is " + univeristy_faculty_count);
+        System.out.println("The University Student Count is " + university_student_count);
+    }
+
+    // Overloaded method to display specific university details
+    void getuniversity_details(String status) {
+        if (status.equals("All")) {
+            getuniversity_details();
+        } else if (status.equals("UN")) {
+            System.out.println("The University Name is " + university_name);
+        } else if (status.equals("UA")) {
+            System.out.println("The University Address is " + university_address);
+        } else if (status.equals("UW")) {
+            System.out.println("The University website is " + university_website);
+        } else if (status.equals("UE")) {
+            System.out.println("The University email is " + university_email);
+        } else {
+            System.out.println("The University Contact No is " + university_contactno);
+            System.out.println("The University Faculty Count is " + univeristy_faculty_count);
+            System.out.println("The University Student Count is " + university_student_count);
+        }
+    }
+}
+Program for Instantiating Object and Calling Overloaded Methods:
+public class SRM_university_main {
+    public static void main(String[] args) {
+        University SRM_University = new University();
+        SRM_University.university_name = "SRM University";
+        SRM_University.university_address = "Managalagiri, Amaravathi, Andrapradesh";
+        SRM_University.university_website = "www.srmap.edu.in";
+        SRM_University.university_email = "info@srmap.edu.in";
+        SRM_University.university_contactno = "123456781";
+        SRM_University.univeristy_faculty_count = 250;
+        SRM_University.university_student_count = 8000;
+
+        // Calling the overloaded method to print only the university name
+        SRM_University.getuniversity_details("UN");
+    }
+}
+2.4 Static Members in Java
+2.4.1 Introduction to Static Members
+The static keyword is used to define members (methods, variables, nested classes) that belong to the class rather than to instances of the class. 
+Static Variable/member can be accessed without creating an instance of the class.
+2.4.1.1. Static Variables
+Static variables are shared across all instances of the class. Any change made to a static variable affects all instances because it is bound to the class, not to individual objects.
+Example: Defining Static Variables
+public class University {
+    static String university_name;
+    static String university_address;
+    static String university_website;
+    static String university_email;
+    static String university_contactno;
+    static int univeristy_faculty_count;
+    static int university_student_count;
+}
+2.4.1.2. Static Methods
+A static method belongs to the class and can be called without creating an object. Static methods typically perform operations related to the class rather than individual instances.
+Example: Static Method to Access Static Variables
+public class University {
+    // Static data members
+    static String university_name;
+    static String university_address;
+    static String university_website;
+    static String university_email;
+    static String university_contactno;
+    static int univeristy_faculty_count;
+    static int university_student_count;
+    // Static method to display university details
+    static void getuniversity_details() {
+        System.out.println("The University Name is " + university_name);
+        System.out.println("The University Address is " + university_address);
+        System.out.println("The University Website is " + university_website);
+        System.out.println("The University Email is " + university_email);
+        System.out.println("The University Contact No is " + university_contactno);
+        System.out.println("The University Faculty Count is " + univeristy_faculty_count);
+        System.out.println("The University Student Count is " + university_student_count);
+    }
+}
+2.4.1.3 Accessing Static Members Without Creating an Object
+One of the major benefits of static members is that they can be accessed directly using the class name, without the need to create an object.
+Example: Accessing Static Members
+public class SRM_univeristy_main {
+    public static void main(String[] args) {
+        // Accessing static members without creating an object
+        University.university_name = "SRM University";
+        University.university_address = "Managalagiri, Amaravathi, Andhra Pradesh";
+        University.university_website = "www.srmap.edu.in";
+        University.university_email = "info@srmap.edu.in";
+        University.university_contactno = "123456781";
+        University.univeristy_faculty_count = 250;
+        University.university_student_count = 8000;
+
+        // Calling static method to display details
+        University.getuniversity_details();
+    }
+}
+2.5 Inheritance and Method Overriding in Java
+2.5.1. Inheritance
+Inheritance is a mechanism in Java that allows a class (called a child class or subclass) to inherit the properties and methods of another class (called the parent class or superclass). 
+Key Points of Inheritance:
+Inheritance allows code reuse by enabling a class to inherit fields and methods from another class.
+The extends keyword is used to create a subclass.
+The subclass can add additional methods and properties or use those from the parent class.
+Syntax:
+class ChildClass extends ParentClass {
+    // Additional fields and methods
+}
+2.5.2. Method Overriding
+If the method present in the base class is used in the child class it is termed as overriding.
+It is one of the way to implement polymorphism ie,runtime polymorphism.
+The method to be called is determined at runtime based on the object type, not the reference type.
+Syntax:
+@Override
+void methodName() {
+    // Method implementation
+}
+2.5.3 Example Program: Inheritance and Overriding
+(i) Creating Base Class:
+public class University {
+   String university_name;          // Data Member
+   String university_address;       // Data Member
+   String university_website;       // Data Member
+   String university_email;         // Data Member
+   String university_contactno;     // Data Member
+   int  univeristy_faculty_count;   // Data Member
+   int university_student_count;    // Data Member
+   // Method of the Base Class
+   void getuniversity_details() {
+       System.out.println("The University Name is " + university_name);
+       System.out.println("The University Address is " + university_address);
+       System.out.println("The University Website is " + university_website);
+       System.out.println("The University Email is " + university_email);
+       System.out.println("The University Contact No is " + university_contactno);
+       System.out.println("The University Faculty Count is " + univeristy_faculty_count);
+       System.out.println("The University Student Count is " + university_student_count);
+   }
+}
+(ii) Creating Child Class and Overriding Method:
+public class SRM_University_AP extends University {
+    String SRM_University_name;    // Data Member
+    String SRM_University_location;// Data Member
+    String SRM_University_website; // Data Member
+
+    // Constructor for the Child Class
+    SRM_University_AP() {
+        SRM_University_name = "SRM University AP";
+        SRM_University_location = "Mangalagiri, Amaravati, AP";
+        SRM_University_website = "www.srmap.edu.in";
+    }
+
+    // Overriding the method of the Base Class
+    @Override
+    void getuniversity_details() {
+        System.out.println("The University Name is " + SRM_University_name);
+        System.out.println("The University Location is " + SRM_University_location);
+        System.out.println("The University Website is " + SRM_University_website);
+    }
+}
+(iii) Instantiating the Child Class:
+public class SRM_university_main {
+    public static void main(String[] args) {
+        // Creating an instance of the child class
+        SRM_University_AP MySRM = new SRM_University_AP();
+        MySRM.getuniversity_details(); // Calls the overridden method
+    }
+}
+Explanation:
+The base class University provides the default behavior for displaying university details.
+The child class SRM_University_AP overrides the getuniversity_details() method to provide specific details for SRM University AP.
+When the child class method is called, it executes the overridden version from the child class rather than the base class method, demonstrating method overriding.
+2.6 Using this and super keyword:
+“this” keyword is used to refer to a variable or method present in  the current class in which we are working.
+“Super” keyword is used to refer the immediate parent of the child class
+2.6.1 Example: Demonstrating this and super Keywords
+(i) Base Class (Super Class): University
+public class University {
+   String university_name;  // Data Member
+   String university_address;  // Data Member
+   String university_website;  // Data Member
+   String university_email;  // Data Member
+   String university_contactno;  // Data Member
+   int univeristy_faculty_count;  // Data Member
+   int university_student_count;  // Data Member
+
+   // Method to print university details
+   void getuniversity_details() {
+       System.out.println("The University Name is " + university_name);
+       System.out.println("The University address is " + university_address);
+       System.out.println("The University website is " + university_website);
+       System.out.println("The University email is " + university_email);
+       System.out.println("The University Contact No is " + university_contactno);
+       System.out.println("The University Faculty Count is " + univeristy_faculty_count);
+       System.out.println("The University Student Count is " + university_student_count);
+   }
+}
+(ii) Child Class: SRM_University_AP using this and super
+public class SRM_University_AP extends University {
+   String SRM_Univerisity_name;  // Data Member specific to SRM_University_AP
+   String SRM_Univerisity_location;  // Data Member specific to SRM_University_AP
+   String SRM_University_Website;  // Data Member specific to SRM_University_AP
+
+   // Constructor to initialize both parent and child class members
+   SRM_Univeristy_AP() {
+       super.university_name = "SRM University";  // Using super to refer to parent class member
+       super.university_address = "Kathankulathoor, Chennai, Tamilnadu";
+       super.university_website = "www.srm.edu.in";
+       this.SRM_Univerisity_name = "SRM University AP";  // Using this to refer to the current class member
+       this.SRM_Univerisity_location = "Mangalarigi, Amaravathi, AP";
+       this.SRM_University_Website = "www.srmap.edu.in";
+   }
+
+   @Override
+   void getuniversity_details() {  // Method overriding
+       System.out.println("The Affiliated University Name is " + super.university_name);  // Using super
+       System.out.println("The Affiliated University Address is " + super.university_address);
+       System.out.println("The Affiliated University Website is " + super.university_website);
+       System.out.println("The University Name is " + this.SRM_Univerisity_name);  // Using this
+       System.out.println("The University Location is " + this.SRM_Univerisity_location);
+       System.out.println("The University Website is " + this.SRM_University_Website);
+   }
+}
+(iii) Instantiating the Child Class
+public class SRM_university_main {
+   public static void main(String[] args) {
+       SRM_University_AP mySRM = new SRM_University_AP();  // Instantiating the subclass
+       mySRM.getuniversity_details();  // Calling the overridden method
+   }
+}
+2.7 Using Final With Inheritance:
+The final keyword is used to stop inheritance of the particular class parent class  by child class
+The class declared with final keyword is the final class and for that class only object can be created
+Example Program for final Keyword
+1. Creating a Class with the final Keyword
+The following program demonstrates the use of the final keyword with a class. The University class is marked as final, which means no other class can extend this class. It contains various data members that store the details of a university, and a method to print those details.
+// University.java (Final Class)
+public final class University {
+   // Data Members
+   String university_name;
+   String university_address;
+   String university_website;
+   String university_email;
+   String university_contactno;
+   int univeristy_faculty_count;
+   int university_student_count;
+
+   // Method to print university details
+   public void getuniversity_details() {
+       System.out.println("The University Name is: " + university_name);
+       System.out.println("The University Address is: " + university_address);
+       System.out.println("The University Website is: " + university_website);
+       System.out.println("The University Email is: " + university_email);
+       System.out.println("The University Contact No is: " + university_contactno);
+       System.out.println("The University Faculty Count is: " + univeristy_faculty_count);
+       System.out.println("The University Student Count is: " + university_student_count);
+   }
+}
+2. Instantiating the Class and Displaying Data
+// SRM_university_main.java
+public class SRM_univeristy_main {
+    public static void main(String[] args) {
+        // Instantiating the final class
+        University SRM_AP = new University();
+        
+        // Setting values to the university data members
+        SRM_AP.university_name = "SRM University";
+        SRM_AP.university_address = "Mangalagiri, Amaravati, Andhra Pradesh";
+        SRM_AP.university_website = "www.srmap.edu.in";
+        SRM_AP.university_email = "info@srmap.edu.in";
+        SRM_AP.university_contactno = "123456781";
+        SRM_AP.univeristy_faculty_count = 250;
+        SRM_AP.university_student_count = 8000;
+        
+        // Calling the method to print university details
+        SRM_AP.getuniversity_details();
+    }
+}
+2.8 Abstract Classes
+Abstract class is a class which cannot be instantiated(Object creation) and this class can be only inherited by the child class.
+Abstract class consist of two type of methods
+Abstract method
+Methods without an implementation (i.e., they are declared but not defined) and this method has to be implemented by the class inheriting the abstract class.
+concrete methods
+Concrete method is the method with implementation and definition
+Example Program for Abstract class with both Concrete and abstract methods:
+(i)Creating abstract class with both concrete and abstract methods
+public  abstract class  University {
+   String university_name;//Data Member
+   String university_address;//Data Member
+   String university_website;//Data Member
+   String university_email;//Data Member
+   String university_contactno;//Data Member
+   int  univeristy_faculty_count;//Data Member
+  int university_student_count;//Data Member
+public void getuniversity_details()// method of the class(Concrete method)
+{
+    System.out.println("The University Name is " + university_name);
+    System.out.println("The University address is " + university_address);
+    System.out.println("The University website is " + university_website);
+    System.out.println("The University email is " + university_email);
+    System.out.println("The University Contact No is " + university_contactno);
+    System.out.println("The University Faculty Count is " + univeristy_faculty_count);
+    System.out.println("The University Student Count is " + university_student_count);
+     
+}
+public abstract void  get_univeristy_basic_details();//abstract method
+}
+University.java(abstract class)
+(ii)Creating a child class and implementing abstract methods present in the base class.
+public class SRM_Univeristy_AP extends  University{
+    String SRM_Univerisity_name;
+    String SRM_Univerisity_location;
+    String SRM_University_Website;
+    @Override
+ public void getuniversity_details()// method of the class
+{
+  System.out.println("The Affliated Univeristy Name is " + super.university_name);
+  System.out.println("The Affliated Univeristy Address is " + super.university_address);
+  System.out.println("The Affliated Univeristy Website is " + super.university_website);
+  System.out.println("The Univeristy Name is " + SRM_Univerisity_name);
+  System.out.println("The Univeristy Name is " + SRM_Univerisity_location);
+  System.out.println("The Univeristy Name is " + SRM_University_Website);
+}
+//abstract method implemented by the child class inheriting base class
+    @Override
+    public void get_univeristy_basic_details() {
+      System.out.println("The Affliated Univeristy Name is " + super.university_name);
+      System.out.println("The Affliated Univeristy Address is " + super.university_address);
+    }
+}
+ SRM_Univeristy_AP.java(implements abstract method in the abstract class)
+(iii) instantiating the child class(SRM_Univeristy_AP)
+public class SRM_univeristy_main {
+    public static void main(String[] args) {
+    SRM_Univeristy_AP SRM_AP=new  SRM_Univeristy_AP();
+    SRM_AP.university_name="SRM University";
+    SRM_AP.university_address="Managalagiri,Amaravathi,Andrapradesh";
+    SRM_AP.university_website="www.srmap.edu.in";
+    SRM_AP.university_email="info@srmap.edu.in";
+    SRM_AP.university_contactno="123456781";
+    SRM_AP.univeristy_faculty_count=250;
+    SRM_AP.university_student_count=8000;
+    SRM_AP.get_univeristy_basic_details();
+        
+    }
+}
+SRM_univeristy_main.java
+2.9 Interface
+ All methods declared in an interface are abstract by default 
+Multiple inheritance can be implemented using interfaces.
+It uses “implements” keyword.
+Example program for Interface:
+(i)Creating Interface with abstract methods:
+public  interface  University {
+public void getuniversity_details();// abstract method
+public void  get_univeristy_basic_details();//abstract methos
+}
+University.Java
+(ii)Creating class that implements the interface and implement all the abstract methods in that class:
+public class SRM_Univeristy_AP implements  University{
+    String SRM_university_name="SRM University";
+    String SRM_university_address="Managalagiri,Amaravathi,Andrapradesh";
+    String SRM_university_website="www.srmap.edu.in";
+    String SRM_university_email="info@srmap.edu.in";
+    String SRM_university_contactno="123456781";
+    int SRM_univeristy_faculty_count=250;
+    int SRM_university_student_count=8000;
+    @Override
+ public void getuniversity_details()// method of the class
+{
+ System.out.println("The University Name is " + SRM_university_name);
+    System.out.println("The University address is " + SRM_university_address);
+    System.out.println("The University website is " + SRM_university_website);
+    System.out.println("The University email is " + SRM_university_email);
+    System.out.println("The University Contact No is " + SRM_university_contactno);
+    System.out.println("The University Faculty Count is " + SRM_univeristy_faculty_count);
+    System.out.println("The University Student Count is " + SRM_university_student_count);
+}
+//abstract method implemented by the child class inheriting base class
+    @Override
+    public void get_univeristy_basic_details() {
+      System.out.println("The Univeristy Name is " + SRM_university_name);
+      System.out.println("The Univeristy Address is " + SRM_university_address);
+    }
+}
+SRM_Univeristy_AP.java
+(iii) instantiating the child class that implements the interface(SRM_Univeristy_AP)
+public class SRM_univeristy_main {
+    public static void main(String[] args) {
+    SRM_Univeristy_AP SRM_AP=new  SRM_Univeristy_AP();
+    SRM_AP.get_univeristy_basic_details();
+        
+    }
+}
+SRM_univeristy_main.java
+Implementing Multiple Inheritance using Interface:
+Multiple inheritance refers to a scenario where a class can inherit properties and behaviors (methods) from more than one parent class
+Java does not support multiple inheritance with classes to avoid ambiguity and complexity, such as the diamond problem.
+So multiple inheritance in JAVA can be implemented by using “Interface”.
+Example Program for Multiple Inheritance:
+	In this example the scenario of establishment of private university(Eg SRM university) is demonstrated.The private university(Eg SRM university) is established by UGC act as well as state private university act.so university class has to implement the feature of both UGC regulations as well as state private university regulation,which can be implemented by using “interface” in JAVA.
+(i)create two or more  interfaces
+public interface UGC_Act {
+public void ugc_details();    
+}
+UGC_Act.java
+
+public interface State_Private_univ_Act {
+  public void state_private_university_details();
+}
+State_Private_univ_Act.java
+
+(ii)Create class that implements both interfaces:
+
+public class SRM_Univeristy_AP implements UGC_Act,State_Private_univ_Act{
+    String SRM_university_name="SRM University";
+    String SRM_university_address="Managalagiri,Amaravathi,Andrapradesh";
+    String SRM_university_website="www.srmap.edu.in";
+    String SRM_university_email="info@srmap.edu.in";
+    String SRM_university_contactno="123456781";
+    int SRM_univeristy_faculty_count=250;
+    int SRM_university_student_count=8000;
+  
+ public void getuniversity_details()// method of the class
+{
+ System.out.println("The University Name is " + SRM_university_name);
+    System.out.println("The University address is " + SRM_university_address);
+    System.out.println("The University website is " + SRM_university_website);
+    System.out.println("The University email is " + SRM_university_email);
+    System.out.println("The University Contact No is " + SRM_university_contactno);
+    System.out.println("The University Faculty Count is " + SRM_univeristy_faculty_count);
+    System.out.println("The University Student Count is " + SRM_university_student_count);
+}
+    @Override
+    public void ugc_details() {
+       System.out.println("SRM University, Neerukonda-Kuragallu Village, Mangalagiri Mandal, Guntur\n" +
+"District - 522502. Andhra Pradesh has been established as a Private University vide\n" +
+"Notification No. G.O.Ms.No.23 dated 23.05.2017"); 
+    }
+    @Override
+    public void state_private_university_details() {
+        System.out.println("Established under ANDHRA PRADESH\n" +
+"PRIVATE UNIVERSITIES (ESTABLISHMENT AND REGULATION)\n" +
+"ACT, 2016.\n" +
+"come force on 23'rd May,20l7");
+    }
+
+}
+SRM_Univeristy_AP.java
+(iii)Instantiating the child class that implements multiple inheritance:
+public class SRM_univeristy_main {
+    public static void main(String[] args) {
+    SRM_Univeristy_AP SRM_AP=new  SRM_Univeristy_AP();
+    SRM_AP.ugc_details();
+    SRM_AP.state_private_university_details();
+        
+    }
+}
+ SRM_univeristy_main.java
+Differences between Abstract Classes and Interface
+Abstract Classes
+Interface
+Abstract classes consist of abstract methods with method definition  and concrete methods with method definition and implementation.
+Interfaces contain only abstract methods.
+The abstract methods had to be implemented by the class extending the abstract class
+The abstract method has to be implemented by the class implementing the interface
+Keyword used “extends”
+Keyword used “implements”
+Abstract class is a class which cannot be instantiated(Object creation) and this class can be only inherited by the child class.
+Multiple inheritance can be implemented by interface in JAVA
+Syntax:
+abstract class class_name
+{
+abstract void abstract_method();
+Abstract void concrete_method()
+{
+System.out.println(“This is concrete method”);
+}
+}
+Syntax
+interface class_name
+{
+void abstract_method1();
+void abstract_method2();
+}
+
+
+
+
+2.10 Packages-Creating,accessing and Using Packages
+Definition:It is defined as the grouping of different classes and interfaces together as a  container and it can also be represented in a hierarchical Manner.
+Types of Packages
+1. Built-in Packages: Java provides several built-in packages, such as java.lang, java.util, and java.io.
+2. User-defined Packages: Developers can create their own packages to organize and reuse code.
+Creating Packages:
+Syntax:Package pkg;
+package->Statement for creating package
+pkg->package Name to be created.
+Accessing Package:Example:
+package SRM_Package;
+public class SRM_Univeristy_AP {
+public String SRM_university_name="SRM University";
+public String SRM_university_address="Managalagiri,Amaravathi,Andrapradesh";
+public String SRM_university_website="www.srmap.edu.in";
+public String SRM_university_email="info@srmap.edu.in";
+public String SRM_university_contactno="123456781";
+public int SRM_univeristy_faculty_count=250;
+public int SRM_university_student_count=8000;
+  
+ public void getuniversity_details()// method of the class
+{
+ System.out.println("The University Name is " + SRM_university_name);
+    System.out.println("The University address is " + SRM_university_address);
+    System.out.println("The University website is " + SRM_university_website);
+    System.out.println("The University email is " + SRM_university_email);
+    System.out.println("The University Contact No is " + SRM_university_contactno);
+    System.out.println("The University Faculty Count is " + SRM_univeristy_faculty_count);
+    System.out.println("The University Student Count is " + SRM_university_student_count);
+}
+}
+ SRM_Univeristy_AP.java
+Using/importing the package:
+Syntax: import pkg1 [.pkg2].(classname | *);
+pkg1 is the name of a top-level package, and 
+pkg2 is the name of a subordinate package inside the outer package separated by a dot (.)
+you specify either an explicit classname or a star (*)
+
+Example program to access mypack package
+import SRM_Package.*;
+public class SRM_univeristy_main {
+    public static void main(String[] args) {
+    SRM_Univeristy_AP SRM_AP=new  SRM_Univeristy_AP();
+    SRM_AP.SRM_university_name="SRM University";
+    SRM_AP.SRM_university_address="Managalagiri,Amaravathi,Andrapradesh";
+    SRM_AP.SRM_university_website="www.srmap.edu.in";
+    SRM_AP.SRM_university_email="info@srmap.edu.in";
+    SRM_AP.SRM_university_contactno="123456781";
+    SRM_AP.SRM_univeristy_faculty_count=250;
+    SRM_AP.SRM_university_student_count=8000;
+    SRM_AP.getuniversity_details();
+    }
+}
+SRM_univeristy_main.java
+Purpose of the Package:
+
+1. Organization: Packages help organize related classes and interfaces, making it easier to locate and use them.
+2. Reusability: Packages enable code reuse by allowing classes and interfaces to be imported and used in multiple programs.
+3. Access Control: Packages provide access control through access modifiers (public, private, protected) to restrict access to classes and members.
+
+4. Name Space Management: 
+
+Packages help avoid naming conflicts by providing a unique namespace for classes and interfaces.
+
+

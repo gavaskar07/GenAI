@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "UGSNcjbfTTM=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\SRMAP\\source\\repos\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\SRMAP\\.nuget\\packages\\anglesharp\\1.3.0\\anglesharp.1.3.0.nupkg.sha512",
+    "C:\\Users\\SRMAP\\.nuget\\packages\\lm-kit.net\\2025.5.1\\lm-kit.net.2025.5.1.nupkg.sha512",
+    "C:\\Users\\SRMAP\\.nuget\\packages\\microsoft.bcl.numerics\\9.0.4\\microsoft.bcl.numerics.9.0.4.nupkg.sha512",
+    "C:\\Users\\SRMAP\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\SRMAP\\.nuget\\packages\\system.numerics.tensors\\9.0.4\\system.numerics.tensors.9.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}
