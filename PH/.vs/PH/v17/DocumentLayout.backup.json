@@ -1,0 +1,117 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Development\\GenAI\\PH\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2FCA235D-780A-4CAD-A375-9423ABF92DAC}|PH.csproj|d:\\development\\genai\\ph\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2FCA235D-780A-4CAD-A375-9423ABF92DAC}|PH.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FCA235D-780A-4CAD-A375-9423ABF92DAC}|PH.csproj|d:\\development\\genai\\ph\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FCA235D-780A-4CAD-A375-9423ABF92DAC}|PH.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FCA235D-780A-4CAD-A375-9423ABF92DAC}|PH.csproj|d:\\development\\genai\\ph\\dbutilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FCA235D-780A-4CAD-A375-9423ABF92DAC}|PH.csproj|solutionrelative:dbutilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FCA235D-780A-4CAD-A375-9423ABF92DAC}|PH.csproj|d:\\development\\genai\\ph\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FCA235D-780A-4CAD-A375-9423ABF92DAC}|PH.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FCA235D-780A-4CAD-A375-9423ABF92DAC}|PH.csproj|d:\\development\\genai\\ph\\ph.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{2FCA235D-780A-4CAD-A375-9423ABF92DAC}|PH.csproj|solutionrelative:ph.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FCA235D-780A-4CAD-A375-9423ABF92DAC}|PH.csproj|d:\\development\\genai\\ph\\ph.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2FCA235D-780A-4CAD-A375-9423ABF92DAC}|PH.csproj|solutionrelative:ph.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PH.csproj",
+              "DocumentMoniker": "D:\\Development\\GenAI\\PH\\PH.csproj",
+              "RelativeDocumentMoniker": "PH.csproj",
+              "ToolTip": "D:\\Development\\GenAI\\PH\\PH.csproj",
+              "RelativeToolTip": "PH.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-07T07:26:11.422Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\Development\\GenAI\\PH\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "D:\\Development\\GenAI\\PH\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAqwCQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T16:57:14.878Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PH",
+              "DocumentMoniker": "D:\\Development\\GenAI\\PH\\PH.csproj",
+              "RelativeDocumentMoniker": "PH.csproj",
+              "ToolTip": "D:\\Development\\GenAI\\PH\\PH.csproj",
+              "RelativeToolTip": "PH.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-07T07:30:21.413Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "dbutilities.cs",
+              "DocumentMoniker": "D:\\Development\\GenAI\\PH\\dbutilities.cs",
+              "RelativeDocumentMoniker": "dbutilities.cs",
+              "ToolTip": "D:\\Development\\GenAI\\PH\\dbutilities.cs",
+              "RelativeToolTip": "dbutilities.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAkwCoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T07:26:38.384Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Development\\GenAI\\PH\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Development\\GenAI\\PH\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T07:26:04.561Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\Development\\GenAI\\PH\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "D:\\Development\\GenAI\\PH\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T07:22:58.847Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

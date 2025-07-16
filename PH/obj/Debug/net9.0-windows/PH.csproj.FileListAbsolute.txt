@@ -1,0 +1,17 @@
+D:\Development\GenAI\PH\bin\Debug\net9.0-windows\PH.exe
+D:\Development\GenAI\PH\bin\Debug\net9.0-windows\PH.deps.json
+D:\Development\GenAI\PH\bin\Debug\net9.0-windows\PH.runtimeconfig.json
+D:\Development\GenAI\PH\bin\Debug\net9.0-windows\PH.dll
+D:\Development\GenAI\PH\bin\Debug\net9.0-windows\PH.pdb
+D:\Development\GenAI\PH\obj\Debug\net9.0-windows\PH.Form1.resources
+D:\Development\GenAI\PH\obj\Debug\net9.0-windows\PH.csproj.GenerateResource.cache
+D:\Development\GenAI\PH\obj\Debug\net9.0-windows\PH.GeneratedMSBuildEditorConfig.editorconfig
+D:\Development\GenAI\PH\obj\Debug\net9.0-windows\PH.AssemblyInfoInputs.cache
+D:\Development\GenAI\PH\obj\Debug\net9.0-windows\PH.AssemblyInfo.cs
+D:\Development\GenAI\PH\obj\Debug\net9.0-windows\PH.csproj.CoreCompileInputs.cache
+D:\Development\GenAI\PH\obj\Debug\net9.0-windows\PH.sourcelink.json
+D:\Development\GenAI\PH\obj\Debug\net9.0-windows\PH.dll
+D:\Development\GenAI\PH\obj\Debug\net9.0-windows\refint\PH.dll
+D:\Development\GenAI\PH\obj\Debug\net9.0-windows\PH.pdb
+D:\Development\GenAI\PH\obj\Debug\net9.0-windows\PH.genruntimeconfig.cache
+D:\Development\GenAI\PH\obj\Debug\net9.0-windows\ref\PH.dll
